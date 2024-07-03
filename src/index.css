@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.Main-button::after {
+  content: "";
+  width: 13rem;
+  height: 3.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.362);
+  position: absolute;
+  top: -13px;
+  left: 15px;
+  transition: all 0.4s;
+}
+
+.Main-button:hover:after {
+  content: "";
+  width: 13rem;
+  height: 3.5rem;
+  border: 2px solid ;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: all 0.4s;
+}
+
+.hero-section {
+  background-image: url("./assets/hero/hero-img.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.titlr {
+  filter: brightness(0) invert(3);
+}
+
+.about-section {
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/who-we-are/background.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+}
+/* Features */
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  filter: grayscale(100%);
+  background-image: url("./assets/features/cycling.jpg");
+  transition: 1s;
+}
+
+.div1:hover .background {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+.div2:hover .background {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+.div3:hover .background {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+.div4:hover .background {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+.div5:hover .background {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+.div6:hover .background {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.div1:hover .sidediv {
+  background-color: #fff;
+}
+.div2:hover .sidediv {
+  background-color: #fff;
+}
+.div3:hover .sidediv {
+  background-color: #fff;
+}
+.div4:hover .sidediv {
+  background-color: #fff;
+}
+.div5:hover .sidediv {
+  background-color: #fff;
+}
+.div6:hover .sidediv {
+  background-color: #fff;
+}
+
+
+.div1:hover .sidediv::before {
+  content: url("./assets/features/bike-red.png");
+}
+.div2:hover .sidediv::before {
+  content: url("./assets/features/boxer-red.png");
+}
+.div3:hover .sidediv::before {
+  content: url("./assets/features/karate-red.png");
+}
+.div4:hover .sidediv::before {
+  content: url("./assets/features/workout-red.png");
+}
+.div5:hover .sidediv::before {
+  content: url("./assets/features/yoga-red.png");
+}
+.div6:hover .sidediv::before {
+  content: url("./assets/features/dumb-red.png");
+}
+
+.bg-2{
+  background-image: url('./assets/features/karate.jpg');
+}
+.bg-3{
+  background-image: url('./assets/features/mma.jpg');
+}
+.bg-4{
+  background-image: url('./assets/features/power.jpg');
+}
+.bg-5{
+  background-image: url('./assets/features/meditation.jpg');
+}
+.bg-6{
+  background-image: url('./assets/features/workout.jpg');
+}
+
+
+.sidediv {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.sidediv::before {
+  width: 100%;
+  position: absolute;
+  transition: all 0.4s;
+  z-index: 6;
+  display: block;
+  transform: scale(0.65);
+  rotate: -27deg;
+}
+
+.sidediv::before {
+  content: url("./assets/features/gym-bike.png");
+  left: 50px;
+  top: -0.8rem;
+  bottom: 45%;
+}
+
+.divimg::before {
+  content: url("./assets/features/boxer.png");
+  left: 50px;
+  top: -0.8rem;
+  bottom: 45%;
+}
+.divimg1::before {
+  content: url("./assets/features/karate.png");
+  left: 50px;
+  top: -0.8rem;
+  bottom: 45%;
+}
+.divimg2::before {
+  content: url("./assets/features/workout.png");
+  left: 50px;
+  top: -0.8rem;
+  bottom: 45%;
+}
+.divimg3::before {
+  content: url("./assets/features/yoga.png");
+  left: 50px;
+  top: -0.8rem;
+  bottom: 45%;
+}
+.divimg4::before {
+  content: url("./assets/features/dumbbell.png");
+  left: 50px;
+  top: -0.8rem;
+  bottom: 45%;
+}
+
+
+
+.sidediv:hover:before {
+  transform: scale(0.7);
+}
+/* Choose Us */
+
+.choose{
+  /* width: 100%; */
+  /* height: 100%; */
+  background-image: url('./assets//choose-us/choose-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.trainerdiv{
+  /* background-color: antiquewhite; */
+  background-image: url('./assets/trainers/dot-bg.png');
+}
+
+.trainerdiv1{
+  background-image: url('./assets/trainers/trainer-bg.png');
+}
+
+.trainerdiv2::after{
+  content: '';
+  width: 50px;
+  height: 3px;
+  background-color: #ff0034;
+  position: absolute;
+  bottom: 0;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.trainerdiv2:hover:after{
+  width: 100%;
+}
+
+.trainiebg::after{
+  content: url('./assets//trainers/bg-attachment.png');
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 0rem;
+  right: 0;
+}
+
+/* gallery */
+
+.gallery-grid {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  gap: 6px;
+  height: 100%;
+
+}
+
+#item-0 {
+  height: 41rem;
+  width: 100%;
+  background-color: #DE89DD;
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 3;
+
+  background-image: url('./assets/gallery/img1.jpg');
+  object-fit: cover;
+  background-size: cover;
+  /* background-position: 0 510px; */
+  background-repeat: no-repeat;
+}
+
+#item-1 {
+
+  background-color: #F7D9AB;
+  grid-row-start: 1;
+  grid-column-start: 3;
+
+  grid-row-end: 2;
+  grid-column-end: 5;
+
+  background-image: url('./assets/gallery/img2.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: 0px -131px;
+  background-repeat: no-repeat;
+}
+
+#item-2 {
+
+  background-color: #BC775E;
+  grid-row-start: 2;
+  grid-column-start: 3;
+
+  grid-row-end: 4;
+  grid-column-end: 5;
+
+  background-image: url('./assets/gallery/img3.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+#item-3 {
+
+  background-color: #A89CE7;
+  grid-row-start: 3;
+  grid-column-start: 1;
+
+  grid-row-end: 4;
+  grid-column-end: 2;
+
+  background-image: url('./assets/gallery/img4.jpg');
+  object-fit: cover;
+  background-size: cover;
+  /* background-position: 0 -13px; */
+  background-repeat: no-repeat;
+
+}
+
+#item-4 {
+
+  background-color: #DC9F7C;
+  grid-row-start: 3;
+  grid-column-start: 2;
+
+  grid-row-end: 4;
+  grid-column-end: 3;
+
+  background-image: url('./assets/gallery/img5.jpg');
+  object-fit: cover;
+  background-size: cover;
+  /* background-position: 0 -81px; */
+  background-repeat: no-repeat;
+
+}
+
+/* BMI */
+
+.bmi-bg{
+  width: 100%;
+  /* height: 300px; */
+  background-image: url('./assets/bmi/background.jpg');
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* Pricing */
+
+.pricingbg{
+  background-image: url('./assets/pricing/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contact */
+
+.contact{
+  background-image: url('./assets/call/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* page header */
+
+.pg-header{
+  background-image: url('./assets/login/banner.jpg');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.abt-pg{
+  background-image: url('./assets/pricing/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Gallery */
+
+.cycling-bg,.meditaion-bg,.mma-bg,.karate-bg,.powerlift-bg,.workout-bg,.crossfit-bg,.running-bg{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cycling-bg{
+  background-image: url('./assets/classes/cycling.jpg');
+}
+
+.meditaion-bg{
+  background-image: url('./assets/classes/meditation.jpg');
+}
+.mma-bg{
+  background-image: url('./assets/classes/mma.jpg');
+}
+.karate-bg{
+  background-image: url('./assets/classes/karate.jpg');
+}
+.powerlift-bg{
+  background-image: url('./assets/classes/powerlifting.jpg');
+}
+.workout-bg{
+  background-image: url('./assets/classes/workout.jpg');
+}
+.crossfit-bg{
+  background-image: url('./assets/classes/cross.jpg');
+}
+.running-bg{
+  background-image: url('./assets/classes/running.jpg');
+}
